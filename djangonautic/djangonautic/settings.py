@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-r@7#4it8g(eccie)a2)l(9b)0v2ldq3e5m-xu@eg7^b$di6vp3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["192.168.0.74", "www.djangoapi.in"]
+ALLOWED_HOSTS = ["https://adiakhileshsingh15.github.io/django-react/"]
 
 
 # Application definition
