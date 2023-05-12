@@ -26,7 +26,11 @@ SECRET_KEY = "django-insecure-r@7#4it8g(eccie)a2)l(9b)0v2ldq3e5m-xu@eg7^b$di6vp3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["192.168.0.74", "djangorctapi.pythonanywhere.com","https://djangorctapi.pythonanywhere.com"]
+ALLOWED_HOSTS = [
+    "192.168.0.74",
+    "djangorctapi.pythonanywhere.com",
+    "https://djangorctapi.pythonanywhere.com",
+]
 
 
 # Application definition
@@ -105,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "http://localhost:3000",
+    "https://master--react-django-blog.netlify.app/",
 ]
 
 # Internationalization
