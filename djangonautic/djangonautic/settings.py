@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-r@7#4it8g(eccie)a2)l(9b)0v2ldq3e5m-xu@eg7^b$di6vp3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["192.168.0.74", "djangorctAPI.pythonanywhere.com"]
+ALLOWED_HOSTS = ["192.168.0.74", "djangorctapi.pythonanywhere.com","https://djangorctapi.pythonanywhere.com"]
 
 
 # Application definition
@@ -125,7 +125,10 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
-STATICFILES_DIRS = []
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    "/var/www/static/",
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

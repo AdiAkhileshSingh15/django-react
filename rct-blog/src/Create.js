@@ -14,7 +14,7 @@ const Create = () => {
         e.preventDefault();
         setIsPending(true);
         const blog = { title, body, author };
-        fetch('http://127.0.0.1:8000/api/blogs/', {
+        fetch('https://djangorctapi.pythonanywhere.com/api/blogs/', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(blog)

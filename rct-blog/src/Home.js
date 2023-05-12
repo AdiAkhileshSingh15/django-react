@@ -22,7 +22,7 @@ const Home = () => {
     //     setBlogs(newBlogs)
     // }
 
-    const { data, isPending, error } = useFetch('http://127.0.0.1:8000/api/blogs/')
+    const { data, isPending, error } = useFetch('https://djangorctapi.pythonanywhere.com/api/blogs/')
 
     return (
         <div className="home">

@@ -4,12 +4,12 @@ import { useNavigate } from "react-router-dom";
 
 const BlogDetails = () => {
     const { id } = useParams()
-    const { data, isPending, error } = useFetch('http://127.0.0.1:8000/api/blogs/' + id + '/')
+    const { data, isPending, error } = useFetch('https://djangorctapi.pythonanywhere.com/api/blogs/' + id + '/')
 
     const navigate = useNavigate();
 
     const handleClick = () => {
-        fetch('http://127.0.0.1:8000/api/blogs/' + id + '/', {
+        fetch('https://djangorctapi.pythonanywhere.com/api/blogs/' + id + '/', {
             method: 'DELETE',
         }).then(() => {
             navigate("/");
